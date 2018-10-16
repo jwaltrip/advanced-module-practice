@@ -1,8 +1,18 @@
-import add from "./modules/add";
-import subtract from "./modules/subtract";
-import multiply from "./modules/multiply";
-import {addTen, addFive} from "./modules/addNumbers";
-import {subtractOne} from "./modules/subtractNumbers";
+const add = require('./modules/add');
+const subtract = require('./modules/subtract');
+const multiply = require('./modules/multiply');
+const divide = require('./modules/divide');
+
+const addNumbers = require('./modules/addNumbers');
+const subtractNumbers = require('./modules/subtractNumbers');
+
+const addTen = addNumbers.addTen;
+const addFive = addNumbers.addFive;
+const addOne = addNumbers.addOne;
+
+const subtractOne = subtractNumbers.subtractOne;
+const subtractFive = subtractNumbers.subtractFive;
+const subtractTen = subtractNumbers.subtractTen;
 
 const number1 = 393;
 const number2 = 238;
